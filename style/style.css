@@ -13,7 +13,7 @@
     display: flex;
      
     justify-content: space-between;
-    margin: 0 80px 0 80px;
+    margin: 0 auto;
     align-items: center;
 }
 .logo{
@@ -38,9 +38,10 @@
 }
 .banner{
     display: flex;
-    margin: 50px 80px;
+    margin: 30px auto;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .now{
@@ -53,11 +54,64 @@
 .ban{
     width: 100%;
 }
+.containor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 40px auto;
+    justify-items: center;
+
+}
+
+.card{  width: 300px;
+    height: 400px;
+    background: linear-gradient(
+        red,yellowgreen
+    );
+    border-radius: 5px;
+    
+    text-align: center;
+    align-content: center;
+    
+
+    
+}
+
+.card-1{ width: 300px;
+    height: 400px;
+   
+    background: linear-gradient(
+        pink, white
+    );
+    border-radius: 5px;
+    
+    text-align: center;
+    align-content: center;
+}
+
+.card-2{
+    width: 300px;
+    height: 400px;
+
+    background: linear-gradient(
+    blue,purple
+    );
+    border-radius: 5px;
+    
+    text-align: center;
+    align-content: center;
+}
+
+
+
 
 
 @media screen and (max-width: 576px){
     .banner{
         flex-direction: column-reverse;
+        border-top: 2px solid red;
+       align-items: center;
+       justify-content: center;
+       text-align: center;
     }
     .home{
         display: none;
@@ -65,6 +119,13 @@
     .button{
         display: none;
     }
+
+        .containor{
+        
+            grid-template-columns:1fr;
+            width: 100%;
+            gap: 30px;
+        }
     
 }
 
