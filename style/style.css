@@ -100,8 +100,41 @@
     text-align: center;
     align-content: center;
 }
+ 
+.btn{
+    background-color: aqua; 
+    border-radius: 15px;
+     width: 150px;
+    height: 40px;
+    
+}
+.history{
+    width: 500px;
+    height: 600px;
+    
+}
+.sec{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
 
-
+    .story{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .abc{
+        width:150px ;
+        height: 30px;
+        margin-left: 15px;
+        margin-top: -150px;
+        background-color: green;
+        border-radius: 12px;
+    }
+    .pic{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
 
 
 
@@ -127,6 +160,12 @@
             gap: 30px;
         }
     
+        .history{
+            display: none;
+        }
+        .story{
+            width: 100%; gap: 5px;
+        }
 }
 
 @media screen and (min-width:576px) {
