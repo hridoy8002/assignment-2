@@ -134,8 +134,22 @@
     .pic{
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
+        width: 100%;
     }
-
+ .aaa{
+    align-content: center;
+ }
+ .btnn{
+    margin-left: 50%;
+   
+ }
+ .foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px;
+    align-items: center;
+    
+ }
 
 
 @media screen and (max-width: 576px){
@@ -165,6 +179,21 @@
         }
         .story{
             width: 100%; gap: 5px;
+            margin: auto;
+        }
+        .sec{ 
+            width: 100%;
+        }
+        .bbb{
+            width: 100%;
+        }
+        .pic{
+            width: 100%;
+        }
+
+        .foot{
+            flex-direction: column;
+            padding: 5px 5px 5px 5px;
         }
 }
 
